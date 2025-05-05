@@ -1,15 +1,17 @@
 *{
-    margin: 0;
+    
     padding: 0;
+    box-sizing: border-box;
 }
-body{
+ html body{
+   
     background-color: #e9ecf4;
     color: #000;
     font-family: sans-serif
 }
 .contenedor{
     width: 90%;
-    max-width: 1000px;
+    max-width: 100%; /*relleno de pantalla*/
     margin: 20px auto;
     display: grid;
     gap: 20px;
@@ -82,13 +84,13 @@ body{
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 788px) {
     .contenedor{
         grid-template-areas: "header header header"
-                             "contenido contenido  contenido"
+                             "contenido contenido   contenido"
                              "sidebar   sidebar    sidebar"
                              "widget-1  widget-1   widget-2"
                              "footer    footer     footer";
     }
     
-}
+}   
